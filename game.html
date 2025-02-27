@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>1942 Remix</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="gameContainer">
+        <canvas id="gameCanvas"></canvas>
+        
+        <div id="score">SCORE: 0</div>
+        <div id="lives">LIVES: 3</div>
+        <div id="rolls">ROLLS: 3</div>
+        <div id="tutorial" class="hidden">← → to move | SPACE to shoot | Z to roll</div>
+        
+        <div id="menu">
+            <h1>1942 REMIX</h1>
+            <button id="startBtn">START GAME</button>
+            <button id="difficultyBtn">DIFFICULTY: MEDIUM</button>
+            <button id="highScoresBtn">HIGH SCORES</button>
+        </div>
+        
+        <div id="gameOver" class="hidden">
+            <h1>GAME OVER</h1>
+            <div id="finalScore">SCORE: 0</div>
+            <button id="restartBtn">PLAY AGAIN</button>
+            <button id="menuBtn">MAIN MENU</button>
+        </div>
+        
+        <div id="levelBriefing" class="hidden">
+            <h1 id="levelTitle">LEVEL 1: PEARL HARBOR</h1>
+            <p id="levelDescription">Defend against Japanese bombers in a surprise attack.</p>
+            <button id="startLevelBtn">START MISSION</button>
+        </div>
+        
+        <div id="historyFact" class="hidden">
+            <h1>HISTORICAL FACT</h1>
+            <p id="factText">The Battle of Midway was a turning point in the Pacific War.</p>
+            <button id="continueBtn">CONTINUE</button>
+        </div>
+    </div>
+
+    <script src="game.js"></script>
+</body>
+</html>
